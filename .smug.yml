@@ -1,0 +1,64 @@
+session: window-fns
+root: ~/Public/crack-a-window
+
+env:
+  DBUI_URL: postgres://postgres:postgres@localhost:5433/window-fns
+
+before_start:
+  - docker-compose up -d
+
+stop:
+  - docker-compose stop
+
+windows:
+  - name: title
+    commands:
+      - v title.md
+  - name: 1
+    commands:
+      - v disclaimer.md
+  - name: 2
+    commands:
+      - v problem.md
+  - name: 3
+    commands:
+      - v group-by.md
+  - name: 4
+    commands:
+      - v without-windows.md
+  - name: 5
+    commands:
+      - v or.md
+  - name: 6
+    commands:
+      - v or.md
+  - name: 7
+    commands:
+      - v introducing.md
+  - name: 8
+    commands:
+      - v spec.md
+  - name: 9
+    commands:
+      - v current-row.md
+  - name: 10
+    commands:
+      - v rows-mode.md
+  - name: 11
+    commands:
+      - v range-mode.md
+  - name: 12
+    commands:
+      - v partition.md
+  - name: 13
+    commands:
+      - v real-world.md
+  - name: 14
+    commands:
+      - v real-world1.md
+  - name: 15
+    commands:
+      - v real-world2.md
+  - name: 15
+    commands:
+      - v one-query.md
